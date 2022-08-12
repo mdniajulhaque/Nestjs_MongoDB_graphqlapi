@@ -1,0 +1,36 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Teacher {
+  username: String!
+  age: Float
+  address: String
+}
+
+type Query {
+  getAllTeachers: [Teacher!]!
+}
+
+type Mutation {
+  createTeacher(input: CreateteacherInput!): Teacher!
+  updateTeacher(updateteacher: UpdateteacherInput!): Teacher!
+  deleteTeacherbyid(postId: teacherid!): Teacher!
+}
+
+input CreateteacherInput {
+  username: String!
+  age: Float
+  address: String
+}
+
+input UpdateteacherInput {
+  id: String!
+  username: String!
+  age: Float
+  address: String
+}
+
+input teacherid {
+  id: String!
+}
